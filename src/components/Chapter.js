@@ -1,49 +1,44 @@
 import React from "react";
-import BodyImage from "../assets/images/Comp.png";
-import HouseIcon from "../assets/images/house-icon.png";
+import BodyImage from "../assets/images/Frame 44.png";
+import PublishedIcon from "../assets/images/Published-left.png";
+import AddIcon from "../assets/images/Frame 48.png";
+import Menu from "../assets/images/Frame 47.png";
+import Title from "../assets/images/title 01.png";
 
 const Chapter = () => {
   return (
     <div className="flex flex-col">
       <div className="flex mb-4 pb-[20px] ml-[102px] mt-[30px]">
-        <ul className="flex items-center text-[rgba(105, 102, 113, 1)] text-inter font-medium text-base gap-2">
-          <li>
-            <img src={HouseIcon} className="w-6 h-6 mr-2"></img>
-          </li>
-          <li className="text-blue-800"> &gt; </li>
-          <li className="text-inter font-medium text-base">Flashcard</li>
-          <li className="text-blue-800"> &gt; </li>
-          <li className="text-inter font-medium text-base">Mathematics</li>
-          <li className="text-blue-800"> &gt; </li>
-          <li className="text-inter font-medium text-base bg-gradient-to-r from-[#06286E] via-[#164EC0] to-[#06286E] text-transparent bg-clip-text">
-            Relation and Function
-          </li>
-        </ul>
+        <img src={Menu} alt="" />
       </div>
       <div
         className="font-montserrat font-bold text-2xl leading-[39.01px] text-center w-[676px] h-[39px] ml-[
-105px]"
+105px] my-4"
       >
         <span className="bg-gradient-to-r from-[#06286E] via-[#164EC0] to-[#06286E] text-transparent bg-clip-text">
           Relations and Functions (Mathematics)
         </span>
       </div>
 
-      <di className="flex flex-col items-center justify-center pt-[50px]">
+      <div className="flex flex-col items-center justify-center pt-[50px]">
         <div className="flex gap-[40px] mb-4 pb-[20px]">
-          <ul className="flex gap-[40px] text-gray-600">
-            <li className="text-blue-950 font-bold">Study</li>
-            <li>Quiz</li>
-            <li>Test</li>
-            <li>Game</li>
-            <li>Others</li>
-          </ul>
+          <img src={Title} alt="" />
         </div>
 
-        <div className="w-[712px] h-[485.19px]">
-          <img src={BodyImage} className="w-[712px]" />
+        <div className="w-[712px] h-[485.19px] mb-[60px]">
+          <img src={BodyImage} className="" />
         </div>
-      </di>
+      </div>
+
+      <div className="flex justify-between mb-[120px]">
+        <div className="flex items-center ml-[80px]">
+          <img src={PublishedIcon} alt="" />
+        </div>
+
+        <div className="flex items-center">
+          <img src={AddIcon} alt="" className="mr-[80px]" />
+        </div>
+      </div>
     </div>
   );
 };
